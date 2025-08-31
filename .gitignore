@@ -200,8 +200,23 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
-
 # Marimo
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+# 🔐 Fichiers sensibles à ne pas pusher
+*.env
+*.env.*
+auth.json
+*.pem
+*.key
+*.crt
+*.lock
+*.enc
+*.secret
+*.p12
+config/*.json
+frontend/.env
+frontend/secrets.*
+frontend/yarn.lock
+fix: ignore secrets and lock files (GitHub Security Protection)
